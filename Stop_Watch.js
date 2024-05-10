@@ -14,7 +14,6 @@ const stop = document.querySelector('.stop')
 const reset = document.querySelector('.reset')
 
 start.addEventListener('click', function (event) {
-    // start.style.opacity = "0";
     start.style.display = "none"
     IntervalId = setInterval(function () {
         seconds_right++;
