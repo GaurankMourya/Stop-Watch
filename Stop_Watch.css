@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+}
+#structure{
+    position: relative;
+    height: 35vh;
+    width: 35vw;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+}
+#structure .watch{
+    height: 90%;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.watch h3 {
+    font-size: 110px;
+    font-weight: 600;
+}
+.watch .colon{
+    margin-left: 3vw;
+    font-size: 120px;
+    margin-top: -20px;
+    color: cadetblue;
+}
+.watch .seconds-left,
+.minutes-left{
+    margin-left: 5vw;
+}
+.buttons{
+    position: absolute;
+    height: 7vh;
+    width: 35vw;
+    margin-top: 34.9vh;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.buttons .start,
+.stop,
+.reset{
+    height: 30px;
+    width: 65px;
+    border-radius: 4px;
+    font-size: 1.05em;
+    color: #322c2c;
+    font-weight: 600;
+    border: 1.05px solid #ccc;
+    transition: all ease 0.65s;
+}
+.start:hover,
+.reset:hover,
+.stop:hover{
+    transition: all ease 0.65s;
+    border: 1.05px solid black;
+    background-color: black;
+    color: #ccc; 
+}
